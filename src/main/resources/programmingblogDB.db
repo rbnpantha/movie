@@ -1,0 +1,15 @@
+use programmingblogDB;
+
+
+
+create table content (
+content_id int NOT NULL AUTO_INCREMENT,
+title varchar(255),
+details varchar(255),
+category varchar(255),
+ sub_category varchar(255),
+author varchar(255),
+PRIMARY KEY (content_id)
+);
+
+insert into content values (1000, "What is kafka consumer?", "In Kafka, each topic is divided into a set of logs known as partitions. ... Kafka scales topic consumption by distributing partitions among a consumer group, which is a set of consumers sharing a common group identifier.", "Kafka", "Consumer", "rbnpantha");
